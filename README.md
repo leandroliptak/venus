@@ -1,2 +1,0 @@
-# venus
-Venus Saturno Astrología
