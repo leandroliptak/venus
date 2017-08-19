@@ -20,6 +20,7 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/load_events.js"></script>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -30,17 +31,6 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<div style="z-index: 0; left: 80%; top: 5%; position: absolute; font-family: Astrology; font-size: 130%" id="planets">
-								</div>
-								<script type="text/javascript">
-										$.ajax(
-											{
-											 url: "http://cursodeastrologia.com.ar:8080/astrolog/now",
-											 type: "GET"
-											}).done(function (text) 
-											{ $("#planets").append(text);});
-								</script>
-
 								<h1>Venus Saturno Astrología</h1>
 								<p>La astrología como forma de transformación de la consciencia.</p>
 
@@ -48,8 +38,11 @@
 									<li><a href="http://fb.com/venusaturno" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 									<li><a href="http://www.instagram.com/astro.venus.saturno/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="http://www.youtube.com/channel/UCUN6H_0GfvoGOiwk0klLRfQ" class="icon fa-youtube"><span class="label">YouTube</span></a></li>									
-									<li><a href="mailto:venus.saturno.astro@gmail.com" class="icon fa-at"><span class="label">Enviar e-mail</span></a></li>									
+									<li><a href="mailto:venus.saturno.astro@gmail.com" class="icon fa-at"><span class="label">Enviar e-mail</span></a></li>
 								</ul>
+								<p><a href="#eventos"><b>Próximos cursos y seminarios</b></a>
+								<span style="left: 75%; bottom: 5%; position: absolute; font-size: 160%" id="planets"></span>
+								</p>
 							</div>
 						</div>
 						<nav>
@@ -227,6 +220,22 @@
 									</ul>
 								</form>
 							</article>
+
+							<article id="eventos">
+								<h2 class="major">Próximos eventos</h2>
+
+								<p>Te recordamos que para inscribirte lo hacés a través de nuestro
+								<a href="#inscripciones">sistema de inscripciones</a> salvo que se
+								indique otro medio específico.</p>
+
+								<div id="event-list"></div>
+
+								<hr>
+								<h3>Eventos pasados</h3>
+								<div id="event-list-past"></div>
+
+							</article>
+
 					</div>
 
 				<!-- Footer -->
