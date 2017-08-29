@@ -1,0 +1,16 @@
+@font-face { font-family: Astrology; src: url('http://localhost/font/astro.ttf'); } 
+
+.transit {
+
+}
+
+.transit-title {
+	font-size: 120%;
+}
+
+.transit-symbols {
+	font-family: Astrology;
+	font-size: 200%;
+	text-align: center;
+	width: 5%;
+}

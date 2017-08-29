@@ -57,3 +57,14 @@ $.ajax(
 		$("#planets").append("<span style='font-family: Astrology;'>" + text + "</span>");
 	}
 );
+
+// Cargar tránsitos del día
+$.ajax(
+{
+	url: "http://cursodeastrologia:8080/astrolog/transits",
+	type: "GET"
+}).done(
+	function (text) {
+		$("#transits").append(text);
+	}
+);
