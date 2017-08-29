@@ -61,7 +61,7 @@ $.ajax(
 // Cargar tránsitos del día
 $.ajax(
 {
-	url: "http://cursodeastrologia:8080/astrolog/transits",
+	url: "http://cursodeastrologia.com.ar:8080/astrolog/transits",
 	type: "GET"
 }).done(
 	function (text) {
